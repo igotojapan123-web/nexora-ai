@@ -303,6 +303,7 @@ function initFAQ() {
 function initContactForm() {
     const form = document.getElementById('contactForm');
     const success = document.getElementById('formSuccess');
+    const CONTACT_EMAIL = 'igotojapan123@gmail.com';
 
     if (form) {
         form.addEventListener('submit', (e) => {
@@ -313,19 +314,39 @@ function initContactForm() {
             const entries = {};
             data.forEach((v, k) => entries[k] = v);
 
-            // Try to submit to Formspree (will fail gracefully if no real ID)
+            // Build email content
+            const subject = encodeURIComponent(`[Nexora AI] New inquiry from ${entries.name || 'Website'}`);
+            const body = encodeURIComponent(
+                `--- New Project Inquiry ---\n\n` +
+                `Name: ${entries.name || 'N/A'}\n` +
+                `Email: ${entries.email || 'N/A'}\n` +
+                `Business: ${entries.business || 'N/A'}\n` +
+                `Service: ${entries.service || 'N/A'}\n` +
+                `Message: ${entries.message || 'N/A'}\n\n` +
+                `--- Sent from nexora-ai portfolio ---`
+            );
+
+            // Submit to Formspree → sends email to igotojapan123@gmail.com
             fetch(form.action, {
                 method: 'POST',
                 headers: { 'Accept': 'application/json' },
                 body: data
-            }).catch(() => {});
-
-            // Show success regardless (for demo purposes / portfolio showcase)
-            form.style.display = 'none';
-            success.style.display = 'block';
-
-            // Also log to console for testing
-            console.log('Form submission:', entries);
+            }).then(res => {
+                if (res.ok) {
+                    form.style.display = 'none';
+                    success.style.display = 'block';
+                } else {
+                    // Fallback: open mailto
+                    window.open(`mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`, '_self');
+                    form.style.display = 'none';
+                    success.style.display = 'block';
+                }
+            }).catch(() => {
+                // Fallback: open mailto
+                window.open(`mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`, '_self');
+                form.style.display = 'none';
+                success.style.display = 'block';
+            });
         });
     }
 }
