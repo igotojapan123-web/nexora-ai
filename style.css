@@ -540,6 +540,8 @@ body {
     transition: border-color 0.3s;
 }
 .channel:hover { border-color: var(--primary); }
+a.channel { text-decoration: none; color: inherit; cursor: pointer; }
+a.channel:hover strong { color: var(--primary-light); }
 .channel-icon { font-size: 1.5rem; }
 .channel strong { display: block; font-size: 0.95rem; margin-bottom: 2px; }
 .channel p { font-size: 0.85rem; color: var(--text-3); }
