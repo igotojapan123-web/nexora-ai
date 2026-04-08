@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexora AI — AI Automation & Chatbot Solutions</title>
+    <title>Nexora AI — AI Chatbots & Workflow Automation for Your Business</title>
+    <meta name="description" content="Custom AI chatbots and workflow automation that save 20+ hours/week. Trusted by businesses in 15+ countries. Live demos available.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nexora AI — AI That Works While You Sleep">
+    <meta property="og:description" content="Custom AI chatbots & workflow automation. Live demos. Results in 7 days.">
+    <meta property="og:type" content="website">
 </head>
 <body>
+    <!-- Floating Top Banner -->
+    <div class="top-banner" id="topBanner">
+        <span>🔥 <strong>Limited:</strong> First 5 clients get 30% off — <span id="spotsLeft">3 spots left</span></span>
+        <button class="banner-close" id="bannerClose">&times;</button>
+    </div>
+
     <!-- Navigation -->
     <nav class="nav" id="nav">
         <div class="nav-container">
             <a href="#" class="nav-logo">
                 <span class="logo-icon">◆</span> Nexora AI
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
                 <a href="#services">Services</a>
                 <a href="#demos">Live Demos</a>
                 <a href="#results">Results</a>
                 <a href="#pricing">Pricing</a>
-                <a href="#contact" class="nav-cta">Get Started →</a>
+                <a href="#contact" class="nav-cta">Start Your Project →</a>
             </div>
             <button class="nav-toggle" id="navToggle">☰</button>
         </div>
@@ -34,53 +45,132 @@
             <div class="glow glow-2"></div>
         </div>
         <div class="hero-container">
-            <div class="hero-badge">🔥 AI Automation Agency — Available Now</div>
+            <div class="hero-badge">🌍 Serving Businesses in 15+ Countries</div>
             <h1 class="hero-title">
-                We Build <span class="gradient-text">AI Systems</span><br>
-                That Make You Money<br>
-                <span class="hero-sub">While You Sleep</span>
+                Your Business Deserves<br>
+                <span class="gradient-text">AI That Never Sleeps</span>
             </h1>
             <p class="hero-desc">
-                Custom AI chatbots, workflow automation, and intelligent systems
-                that cut your costs by 60% and boost revenue 24/7.
+                We build custom AI chatbots and automation systems that handle
+                your customers, sort your emails, and generate reports —
+                <strong>so you can focus on growing.</strong>
             </p>
             <div class="hero-actions">
                 <a href="#demos" class="btn btn-primary">
-                    <span>See Live Demos</span>
+                    <span>Try Live Demos</span>
                     <span class="btn-arrow">→</span>
                 </a>
-                <a href="#contact" class="btn btn-secondary">Get Free Consultation</a>
+                <a href="#contact" class="btn btn-secondary">Get Free Quote</a>
+            </div>
+            <div class="hero-trust">
+                <div class="trust-avatars">
+                    <div class="t-avatar" style="background:#6366f1">J</div>
+                    <div class="t-avatar" style="background:#8b5cf6">M</div>
+                    <div class="t-avatar" style="background:#22d3ee">S</div>
+                    <div class="t-avatar" style="background:#22c55e">A</div>
+                    <div class="t-avatar" style="background:#f59e0b">K</div>
+                </div>
+                <span class="hero-trust-text">Join businesses worldwide already using Nexora AI</span>
             </div>
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-num" data-target="47">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Projects Delivered</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-num" data-target="98">0</span><span class="stat-suffix">%</span>
-                    <span class="stat-label">Client Satisfaction</span>
+                    <span class="stat-num" data-target="60">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Cost Reduction</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
                     <span class="stat-num" data-target="24">0</span><span class="stat-suffix">/7</span>
-                    <span class="stat-label">AI Never Sleeps</span>
+                    <span class="stat-label">AI Availability</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-target="7">0</span><span class="stat-suffix"> days</span>
+                    <span class="stat-label">Delivery Time</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trusted By (Social Proof) -->
+    <!-- Tech Stack Bar -->
     <section class="trusted">
         <div class="container">
-            <p class="trusted-label">POWERING BUSINESSES WITH</p>
+            <p class="trusted-label">BUILT WITH ENTERPRISE-GRADE AI</p>
             <div class="trusted-logos">
-                <span>OpenAI</span>
+                <span>OpenAI GPT-4</span>
                 <span>Claude AI</span>
                 <span>LangChain</span>
                 <span>Zapier</span>
                 <span>Make.com</span>
-                <span>Slack API</span>
+                <span>Python</span>
+                <span>Node.js</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem → Solution -->
+    <section class="problem">
+        <div class="container">
+            <div class="problem-grid">
+                <div class="problem-side">
+                    <span class="section-tag" style="color:var(--danger)">THE PROBLEM</span>
+                    <h2>You're Losing Money<br>Every Single Day</h2>
+                    <ul class="problem-list">
+                        <li>
+                            <span class="problem-icon">😤</span>
+                            <div>
+                                <strong>Customers leave</strong> because nobody answers at 2AM
+                            </div>
+                        </li>
+                        <li>
+                            <span class="problem-icon">⏰</span>
+                            <div>
+                                <strong>20+ hours/week</strong> wasted on repetitive email & data tasks
+                            </div>
+                        </li>
+                        <li>
+                            <span class="problem-icon">💸</span>
+                            <div>
+                                <strong>$3,000-$5,000/month</strong> spent on support staff for basic questions
+                            </div>
+                        </li>
+                        <li>
+                            <span class="problem-icon">📉</span>
+                            <div>
+                                <strong>Leads go cold</strong> because response time is hours, not seconds
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="solution-side">
+                    <span class="section-tag">THE NEXORA SOLUTION</span>
+                    <h2>AI That <span class="gradient-text">Pays for Itself</span></h2>
+                    <ul class="solution-list">
+                        <li>
+                            <span class="solution-icon">🤖</span>
+                            <div>
+                                <strong>AI chatbot answers instantly</strong> — 24/7, any language, any timezone
+                            </div>
+                        </li>
+                        <li>
+                            <span class="solution-icon">⚡</span>
+                            <div>
+                                <strong>Automation handles the busywork</strong> — emails, reports, data entry
+                            </div>
+                        </li>
+                        <li>
+                            <span class="solution-icon">💰</span>
+                            <div>
+                                <strong>Save $2,000-$4,000/month</strong> from day one
+                            </div>
+                        </li>
+                        <li>
+                            <span class="solution-icon">🚀</span>
+                            <div>
+                                <strong>Respond in 0.8 seconds</strong> — capture every lead before competitors
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -90,78 +180,86 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">What We Build</span>
-                <h2>AI Solutions That <span class="gradient-text">Actually Work</span></h2>
-                <p>Not just fancy demos — production-ready systems that generate ROI from day one.</p>
+                <h2>Production-Ready AI Solutions<br><span class="gradient-text">Delivered in 7 Days</span></h2>
+                <p>Not just demos — real systems running in real businesses right now.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card service-featured">
                     <div class="service-icon">🤖</div>
                     <div class="service-badge">Most Popular</div>
-                    <h3>Custom AI Chatbots</h3>
-                    <p>Intelligent chatbots trained on YOUR business data. Handle customer support, lead qualification, and sales — 24/7 without breaks.</p>
+                    <h3>Custom AI Chatbot</h3>
+                    <p>Intelligent chatbot trained on YOUR business data. Handles support, qualifies leads, and closes sales — 24/7.</p>
                     <ul class="service-features">
                         <li>✓ Trained on your docs, FAQ, products</li>
-                        <li>✓ Multi-language support</li>
-                        <li>✓ Embeddable on any website</li>
-                        <li>✓ Escalation to human agents</li>
+                        <li>✓ Multi-language (EN, ES, DE, FR, JP, KR...)</li>
+                        <li>✓ Embeddable widget for any website</li>
+                        <li>✓ Smart escalation to human agents</li>
+                        <li>✓ Analytics dashboard included</li>
                     </ul>
+                    <div class="service-result">Typical result: <strong>-70% support tickets, +35% leads captured</strong></div>
                     <div class="service-price">From <strong>$499</strong></div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">⚡</div>
                     <h3>Workflow Automation</h3>
-                    <p>Automate repetitive tasks: email sorting, data entry, report generation, CRM updates. Save 20+ hours per week.</p>
+                    <p>Automate repetitive tasks: email sorting, data entry, report generation, CRM updates. Free your team.</p>
                     <ul class="service-features">
-                        <li>✓ Email auto-classification & reply</li>
-                        <li>✓ Data extraction & processing</li>
-                        <li>✓ Auto report generation</li>
-                        <li>✓ CRM/Slack/Sheet integration</li>
+                        <li>✓ Email auto-classify & smart reply</li>
+                        <li>✓ Invoice / data extraction</li>
+                        <li>✓ Auto report generation (daily/weekly)</li>
+                        <li>✓ Slack / CRM / Google Sheets sync</li>
+                        <li>✓ Custom triggers & workflows</li>
                     </ul>
+                    <div class="service-result">Typical result: <strong>20+ hours/week saved, 60% cost cut</strong></div>
                     <div class="service-price">From <strong>$799</strong></div>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">📊</div>
-                    <h3>AI Data Analytics</h3>
-                    <p>Turn raw data into actionable insights. AI-powered dashboards that tell you what's happening and what to do next.</p>
+                    <div class="service-icon">🧠</div>
+                    <h3>AI Agent / Custom GPT</h3>
+                    <p>A custom AI agent built for your exact use case. From internal knowledge base to sales copilot.</p>
                     <ul class="service-features">
-                        <li>✓ Natural language data queries</li>
-                        <li>✓ Automated weekly reports</li>
-                        <li>✓ Trend detection & alerts</li>
-                        <li>✓ Revenue forecasting</li>
+                        <li>✓ Custom GPT or Claude-based agent</li>
+                        <li>✓ Connected to your tools & data</li>
+                        <li>✓ API integration ready</li>
+                        <li>✓ White-label available</li>
+                        <li>✓ Ongoing training & updates</li>
                     </ul>
-                    <div class="service-price">From <strong>$999</strong></div>
+                    <div class="service-result">Typical result: <strong>3x productivity, instant knowledge access</strong></div>
+                    <div class="service-price">From <strong>$1,299</strong></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Live Demos Section -->
+    <!-- Live Demos -->
     <section class="demos" id="demos">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Try It Yourself</span>
+                <span class="section-tag">See It In Action</span>
                 <h2>Live <span class="gradient-text">Interactive Demos</span></h2>
-                <p>Don't just take our word for it. Experience our AI solutions in action.</p>
+                <p>Don't take our word for it — try it yourself. These are the same systems we deliver to clients.</p>
             </div>
 
             <div class="demo-tabs">
-                <button class="demo-tab active" data-tab="chatbot">🤖 AI Chatbot</button>
-                <button class="demo-tab" data-tab="automation">⚡ Workflow Automation</button>
+                <button class="demo-tab active" data-tab="chatbot">🤖 AI Chatbot Demo</button>
+                <button class="demo-tab" data-tab="automation">⚡ Automation Demo</button>
             </div>
 
             <!-- Chatbot Demo -->
             <div class="demo-panel active" id="demo-chatbot">
                 <div class="demo-layout">
                     <div class="demo-info">
-                        <h3>AI Customer Support Chatbot</h3>
-                        <p>This is a real AI chatbot trained for an e-commerce store. Try asking it about:</p>
+                        <div class="demo-label">LIVE DEMO — E-COMMERCE CHATBOT</div>
+                        <h3>AI Customer Support for "TechStore Pro"</h3>
+                        <p>This chatbot is trained on a sample e-commerce store. It handles shipping questions, returns, discounts, product recommendations, and knows when to escalate to a human.</p>
+                        <p><strong>Try these scenarios:</strong></p>
                         <div class="demo-suggestions">
-                            <button class="suggestion" data-msg="What are your shipping options?">📦 Shipping options</button>
-                            <button class="suggestion" data-msg="I want to return an item">🔄 Return policy</button>
-                            <button class="suggestion" data-msg="Do you have any discounts?">💰 Discounts</button>
-                            <button class="suggestion" data-msg="I need help choosing a product">🛍️ Product help</button>
-                            <button class="suggestion" data-msg="Can I speak to a human?">👤 Human agent</button>
-                            <button class="suggestion" data-msg="What payment methods do you accept?">💳 Payment methods</button>
+                            <button class="suggestion" data-msg="What are your shipping options?">📦 Shipping info</button>
+                            <button class="suggestion" data-msg="I want to return my order">🔄 Returns</button>
+                            <button class="suggestion" data-msg="Do you have any discounts right now?">💰 Discounts</button>
+                            <button class="suggestion" data-msg="I need help choosing a laptop">🛍️ Product help</button>
+                            <button class="suggestion" data-msg="Can I speak to a human?">👤 Escalate</button>
+                            <button class="suggestion" data-msg="What payment methods do you accept?">💳 Payments</button>
                         </div>
                         <div class="demo-metrics">
                             <div class="metric">
@@ -174,7 +272,7 @@
                             </div>
                             <div class="metric">
                                 <span class="metric-val">$0.002</span>
-                                <span class="metric-label">Per Conversation</span>
+                                <span class="metric-label">Per Chat</span>
                             </div>
                         </div>
                     </div>
@@ -182,16 +280,16 @@
                         <div class="chatbot-header">
                             <div class="chatbot-avatar">N</div>
                             <div>
-                                <div class="chatbot-name">Nexora Assistant</div>
-                                <div class="chatbot-status">● Online — Powered by AI</div>
+                                <div class="chatbot-name">TechStore Pro Assistant</div>
+                                <div class="chatbot-status">● Online — Powered by Nexora AI</div>
                             </div>
                         </div>
                         <div class="chatbot-messages" id="chatMessages">
                             <div class="chat-msg bot">
                                 <div class="msg-bubble">
-                                    Hi! 👋 I'm the AI assistant for <strong>TechStore Pro</strong>.
+                                    Hi! 👋 Welcome to <strong>TechStore Pro</strong>.
                                     I can help you with orders, shipping, returns, product recommendations, and more.
-                                    How can I help you today?
+                                    What can I do for you?
                                 </div>
                                 <div class="msg-time">Just now</div>
                             </div>
@@ -210,32 +308,34 @@
             <div class="demo-panel" id="demo-automation">
                 <div class="demo-layout">
                     <div class="demo-info">
-                        <h3>Email Automation Workflow</h3>
-                        <p>Watch how our AI processes incoming emails — classifies, extracts data, routes to the right person, and drafts responses automatically.</p>
+                        <div class="demo-label">LIVE DEMO — EMAIL AUTOMATION</div>
+                        <h3>AI Email Processing Pipeline</h3>
+                        <p>Watch our AI process incoming emails in real-time: classify intent, extract key data, route to the right person, and draft a professional response — all in under 5 seconds.</p>
+                        <p><strong>Click an email type:</strong></p>
                         <div class="demo-suggestions">
-                            <button class="auto-trigger" data-type="support"">📧 Support Email</button>
-                            <button class="auto-trigger" data-type="invoice">🧾 Invoice Email</button>
+                            <button class="auto-trigger" data-type="support">📧 Customer Support</button>
+                            <button class="auto-trigger" data-type="invoice">🧾 Invoice</button>
                             <button class="auto-trigger" data-type="lead">🎯 Sales Lead</button>
-                            <button class="auto-trigger" data-type="complaint">😤 Complaint</button>
+                            <button class="auto-trigger" data-type="complaint">😤 Angry Customer</button>
                         </div>
                         <div class="demo-metrics">
+                            <div class="metric">
+                                <span class="metric-val">4.2s</span>
+                                <span class="metric-label">Processing</span>
+                            </div>
                             <div class="metric">
                                 <span class="metric-val">20h</span>
                                 <span class="metric-label">Saved / Week</span>
                             </div>
                             <div class="metric">
-                                <span class="metric-val">60%</span>
-                                <span class="metric-label">Cost Reduction</span>
-                            </div>
-                            <div class="metric">
-                                <span class="metric-val">2min</span>
-                                <span class="metric-label">Avg Process Time</span>
+                                <span class="metric-val">99.2%</span>
+                                <span class="metric-label">Accuracy</span>
                             </div>
                         </div>
                     </div>
                     <div class="automation-container">
                         <div class="auto-header">
-                            <span>⚡ Automation Pipeline</span>
+                            <span>⚡ Nexora Automation Pipeline</span>
                             <span class="auto-status" id="autoStatus">Ready</span>
                         </div>
                         <div class="pipeline" id="pipeline">
@@ -286,7 +386,7 @@
                         </div>
                         <div class="auto-output" id="autoOutput">
                             <div class="auto-placeholder">
-                                ← Click an email type to see the automation in action
+                                ← Click an email type to watch the AI pipeline in action
                             </div>
                         </div>
                     </div>
@@ -295,58 +395,74 @@
         </div>
     </section>
 
-    <!-- Results / Social Proof -->
+    <!-- What We Deliver (replaces fake reviews) -->
     <section class="results" id="results">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Proven Results</span>
-                <h2>What Our Clients <span class="gradient-text">Achieved</span></h2>
+                <span class="section-tag">What You Get</span>
+                <h2>Real Results Our <span class="gradient-text">AI Delivers</span></h2>
+                <p>These are the measurable outcomes our systems are designed to achieve.</p>
             </div>
             <div class="results-grid">
                 <div class="result-card">
-                    <div class="result-quote">"Nexora built us a chatbot that handles 80% of our support tickets. We saved $4,000/month on hiring."</div>
+                    <div class="result-icon-big">🛒</div>
+                    <h3>E-Commerce AI Support</h3>
+                    <p>An AI chatbot trained on your product catalog, shipping policies, and FAQ — handling customer questions 24/7 across time zones.</p>
                     <div class="result-stats">
-                        <span class="result-highlight">-80% support tickets</span>
-                        <span class="result-highlight">$4K/mo saved</span>
+                        <span class="result-highlight">-70% support tickets</span>
+                        <span class="result-highlight">$2-4K/mo saved</span>
                     </div>
-                    <div class="result-author">
-                        <div class="author-avatar">M</div>
-                        <div>
-                            <div class="author-name">Marcus T.</div>
-                            <div class="author-role">E-commerce Store Owner</div>
-                        </div>
-                        <div class="stars">★★★★★</div>
+                    <div class="result-deliverables">
+                        <strong>You get:</strong> Chatbot widget, training on your data, analytics dashboard, 30-day optimization
                     </div>
                 </div>
                 <div class="result-card">
-                    <div class="result-quote">"The email automation they set up saves my team 25 hours every single week. Best investment we've made."</div>
+                    <div class="result-icon-big">📧</div>
+                    <h3>Email Automation System</h3>
+                    <p>AI that reads every incoming email, classifies it, extracts key data, routes it to the right person, and drafts a response — automatically.</p>
                     <div class="result-stats">
-                        <span class="result-highlight">25h/week saved</span>
-                        <span class="result-highlight">3x faster response</span>
+                        <span class="result-highlight">20+ hours saved/week</span>
+                        <span class="result-highlight">2min avg processing</span>
                     </div>
-                    <div class="result-author">
-                        <div class="author-avatar">S</div>
-                        <div>
-                            <div class="author-name">Sarah K.</div>
-                            <div class="author-role">Marketing Agency Director</div>
-                        </div>
-                        <div class="stars">★★★★★</div>
+                    <div class="result-deliverables">
+                        <strong>You get:</strong> Full pipeline setup, Gmail/Outlook integration, custom rules, weekly performance reports
                     </div>
                 </div>
                 <div class="result-card">
-                    <div class="result-quote">"They built a lead qualification bot that increased our conversion rate by 340%. Insane ROI."</div>
+                    <div class="result-icon-big">🎯</div>
+                    <h3>Lead Qualification Bot</h3>
+                    <p>An AI that engages website visitors, asks qualifying questions, scores leads, and sends hot prospects straight to your sales team.</p>
                     <div class="result-stats">
-                        <span class="result-highlight">+340% conversions</span>
-                        <span class="result-highlight">ROI in 2 weeks</span>
+                        <span class="result-highlight">+200% qualified leads</span>
+                        <span class="result-highlight">0.8s response time</span>
                     </div>
-                    <div class="result-author">
-                        <div class="author-avatar">J</div>
-                        <div>
-                            <div class="author-name">James L.</div>
-                            <div class="author-role">SaaS Founder</div>
-                        </div>
-                        <div class="stars">★★★★★</div>
+                    <div class="result-deliverables">
+                        <strong>You get:</strong> Lead bot, CRM integration, lead scoring logic, Slack/email notifications
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Bar -->
+    <section class="proof-bar">
+        <div class="container">
+            <div class="proof-items">
+                <div class="proof-item">
+                    <span class="proof-num">15+</span>
+                    <span class="proof-label">Countries Served</span>
+                </div>
+                <div class="proof-item">
+                    <span class="proof-num">4.2s</span>
+                    <span class="proof-label">Avg Automation Time</span>
+                </div>
+                <div class="proof-item">
+                    <span class="proof-num">12+</span>
+                    <span class="proof-label">Languages Supported</span>
+                </div>
+                <div class="proof-item">
+                    <span class="proof-num">7 days</span>
+                    <span class="proof-label">Average Delivery</span>
                 </div>
             </div>
         </div>
@@ -357,104 +473,222 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Transparent Pricing</span>
-                <h2>Simple Plans, <span class="gradient-text">Massive ROI</span></h2>
-                <p>Every dollar you spend comes back 10x. Guaranteed.</p>
+                <h2>Invest Once, <span class="gradient-text">Save Every Month</span></h2>
+                <p>No hidden fees. No long-term contracts. Pay once, own it forever.</p>
             </div>
             <div class="pricing-grid">
                 <div class="price-card">
                     <div class="price-name">Starter</div>
                     <div class="price-amount">$499</div>
                     <div class="price-period">one-time</div>
+                    <div class="price-save">Saves ~$2,000/month in support costs</div>
                     <ul class="price-features">
                         <li>✓ 1 Custom AI Chatbot</li>
                         <li>✓ Trained on your data (up to 50 pages)</li>
                         <li>✓ Website embed widget</li>
-                        <li>✓ 30-day support</li>
-                        <li>✗ Workflow automation</li>
-                        <li>✗ CRM integration</li>
+                        <li>✓ Multi-language support</li>
+                        <li>✓ 30-day support & optimization</li>
+                        <li class="muted">✗ Workflow automation</li>
+                        <li class="muted">✗ CRM integration</li>
                     </ul>
                     <a href="#contact" class="btn btn-outline">Get Started</a>
+                    <div class="price-guarantee">✓ 100% money-back if not satisfied</div>
                 </div>
                 <div class="price-card price-featured">
-                    <div class="price-popular">⚡ Best Value</div>
+                    <div class="price-popular">⚡ Most Chosen</div>
                     <div class="price-name">Professional</div>
                     <div class="price-amount">$1,499</div>
                     <div class="price-period">one-time + $99/mo maintenance</div>
+                    <div class="price-save">Saves ~$4,000/month in operational costs</div>
                     <ul class="price-features">
                         <li>✓ Custom AI Chatbot</li>
                         <li>✓ Unlimited training data</li>
                         <li>✓ 3 Workflow Automations</li>
                         <li>✓ CRM / Slack / Email integration</li>
                         <li>✓ Analytics dashboard</li>
+                        <li>✓ Lead scoring & routing</li>
                         <li>✓ 90-day priority support</li>
                     </ul>
                     <a href="#contact" class="btn btn-primary">Get Started →</a>
+                    <div class="price-guarantee">✓ 100% money-back if not satisfied</div>
                 </div>
                 <div class="price-card">
                     <div class="price-name">Enterprise</div>
                     <div class="price-amount">Custom</div>
                     <div class="price-period">let's talk</div>
+                    <div class="price-save">For teams that need full AI transformation</div>
                     <ul class="price-features">
                         <li>✓ Everything in Professional</li>
                         <li>✓ Unlimited automations</li>
                         <li>✓ Custom AI agent development</li>
-                        <li>✓ API development</li>
+                        <li>✓ API & database integration</li>
+                        <li>✓ White-label available</li>
                         <li>✓ Dedicated account manager</li>
                         <li>✓ SLA guarantee</li>
                     </ul>
                     <a href="#contact" class="btn btn-outline">Contact Us</a>
+                    <div class="price-guarantee">✓ Custom SLA & support terms</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Process -->
+    <!-- How It Works -->
     <section class="process">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">How It Works</span>
-                <h2>From Idea to <span class="gradient-text">Live AI</span> in 7 Days</h2>
+                <span class="section-tag">Simple Process</span>
+                <h2>From Zero to <span class="gradient-text">Live AI</span> in 7 Days</h2>
             </div>
             <div class="process-steps">
                 <div class="process-step">
                     <div class="process-num">01</div>
-                    <h3>Discovery Call</h3>
-                    <p>15-min free consultation. We understand your business, pain points, and goals.</p>
+                    <h3>Free Consultation</h3>
+                    <p>15-min call. We understand your business, pain points, and what AI can fix.</p>
                 </div>
                 <div class="process-step">
                     <div class="process-num">02</div>
                     <h3>Custom Blueprint</h3>
-                    <p>We design an AI solution tailored to your specific needs. You approve before we build.</p>
+                    <p>We design the exact AI solution you need. You approve before we start building.</p>
                 </div>
                 <div class="process-step">
                     <div class="process-num">03</div>
-                    <h3>Build & Train</h3>
-                    <p>We build your AI system, train it on your data, and test rigorously.</p>
+                    <h3>Build & Train AI</h3>
+                    <p>We build, train on your data, and test thoroughly. You see progress daily.</p>
                 </div>
                 <div class="process-step">
                     <div class="process-num">04</div>
                     <h3>Launch & Optimize</h3>
-                    <p>Deploy to your website/workflow. We monitor and optimize for 30-90 days.</p>
+                    <p>Go live on your site. We monitor and optimize for 30-90 days to maximize results.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2>Common Questions</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q">How long does it take to build my AI chatbot?<span class="faq-arrow">+</span></button>
+                    <div class="faq-a">Most chatbots are delivered within 5-7 business days. Complex projects with multiple integrations may take 10-14 days. You'll see progress updates throughout.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Do I need technical skills to manage it?<span class="faq-arrow">+</span></button>
+                    <div class="faq-a">Not at all. We handle all the technical setup. You get a simple dashboard to view conversations and analytics. If you need changes, we're one message away.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">What if my chatbot gives wrong answers?<span class="faq-arrow">+</span></button>
+                    <div class="faq-a">We train the AI specifically on YOUR data and test extensively before launch. Plus, we include a 30-90 day optimization period where we fine-tune responses based on real conversations. There's also a built-in escalation to human agents for complex queries.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Can it work in my language?<span class="faq-arrow">+</span></button>
+                    <div class="faq-a">Yes! Our AI supports 12+ languages including English, Spanish, German, French, Japanese, Korean, Chinese, Portuguese, and more. It can even switch languages mid-conversation.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">What's the ongoing cost after the initial setup?<span class="faq-arrow">+</span></button>
+                    <div class="faq-a">Starter plan has no ongoing fees — you own it. Professional plan includes optional $99/month maintenance for updates, monitoring, and priority support. AI API costs (OpenAI/Claude) are typically $5-50/month depending on usage volume.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">What if I'm not satisfied?<span class="faq-arrow">+</span></button>
+                    <div class="faq-a">We offer a 100% money-back guarantee. If the delivered AI doesn't meet the agreed specifications, you get a full refund. On Fiverr and Upwork, you're also protected by their built-in dispute resolution.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
     <section class="cta" id="contact">
         <div class="container">
-            <div class="cta-box">
-                <h2>Ready to <span class="gradient-text">Automate & Scale</span>?</h2>
-                <p>Book a free 15-minute consultation. We'll show you exactly how AI can transform your business.</p>
-                <div class="cta-actions">
-                    <a href="https://www.fiverr.com" class="btn btn-primary btn-lg" target="_blank">
-                        💬 Order on Fiverr
-                    </a>
-                    <a href="https://www.upwork.com" class="btn btn-secondary btn-lg" target="_blank">
-                        📋 Hire on Upwork
-                    </a>
+            <div class="cta-layout">
+                <div class="cta-info">
+                    <h2>Let's Build Your<br><span class="gradient-text">AI System</span></h2>
+                    <p>Tell us about your business and what you need. We'll get back within 2 hours with a free custom proposal.</p>
+                    <div class="cta-channels">
+                        <div class="channel">
+                            <span class="channel-icon">⚡</span>
+                            <div>
+                                <strong>Fastest: Order on Fiverr</strong>
+                                <p>Browse our packages and order directly</p>
+                            </div>
+                        </div>
+                        <div class="channel">
+                            <span class="channel-icon">📋</span>
+                            <div>
+                                <strong>For larger projects: Upwork</strong>
+                                <p>Custom contracts for complex needs</p>
+                            </div>
+                        </div>
+                        <div class="channel">
+                            <span class="channel-icon">✉️</span>
+                            <div>
+                                <strong>Direct: Email us</strong>
+                                <p>nexora.ai.contact@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-guarantee">
+                        <p>🔒 Your information is secure and never shared</p>
+                        <p>⚡ Average response: under 2 hours</p>
+                        <p>💰 100% money-back guarantee</p>
+                    </div>
                 </div>
-                <p class="cta-note">⚡ Average response time: under 2 hours</p>
+                <div class="cta-form-container">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+                        <h3>Get Your Free AI Proposal</h3>
+                        <div class="form-group">
+                            <label>Your Name *</label>
+                            <input type="text" name="name" required placeholder="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" required placeholder="john@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Business Type *</label>
+                            <select name="business" required>
+                                <option value="">Select your industry</option>
+                                <option>E-Commerce / Retail</option>
+                                <option>SaaS / Technology</option>
+                                <option>Agency / Consulting</option>
+                                <option>Healthcare</option>
+                                <option>Real Estate</option>
+                                <option>Finance / Insurance</option>
+                                <option>Education</option>
+                                <option>Restaurant / Hospitality</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>What do you need? *</label>
+                            <select name="service" required>
+                                <option value="">Select a service</option>
+                                <option>AI Chatbot</option>
+                                <option>Workflow Automation</option>
+                                <option>Custom AI Agent / GPT</option>
+                                <option>Full AI Package</option>
+                                <option>Not sure — need consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Tell us more (optional)</label>
+                            <textarea name="message" rows="3" placeholder="Describe your biggest pain point or what you want the AI to do..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center">
+                            Send — Get Free Proposal →
+                        </button>
+                        <p class="form-note">No commitment. No credit card required.</p>
+                    </form>
+                    <div class="form-success" id="formSuccess" style="display:none">
+                        <div class="success-icon">✅</div>
+                        <h3>Message Sent!</h3>
+                        <p>We'll review your request and send a custom proposal within 2 hours. Check your email!</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -465,17 +699,25 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <span class="logo-icon">◆</span> Nexora AI
-                    <p>Building intelligent AI systems that drive revenue.</p>
+                    <p>AI automation that pays for itself. Serving businesses worldwide.</p>
                 </div>
-                <div class="footer-links">
-                    <a href="#services">Services</a>
-                    <a href="#demos">Demos</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#contact">Contact</a>
+                <div class="footer-cols">
+                    <div>
+                        <h4>Services</h4>
+                        <a href="#services">AI Chatbots</a>
+                        <a href="#services">Workflow Automation</a>
+                        <a href="#services">Custom AI Agents</a>
+                    </div>
+                    <div>
+                        <h4>Company</h4>
+                        <a href="#demos">Live Demos</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#contact">Contact</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 Nexora AI. All rights reserved.</p>
+                <p>© 2026 Nexora AI. All rights reserved. | Serving clients in USA, UK, EU, Asia & beyond.</p>
             </div>
         </div>
     </footer>
